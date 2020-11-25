@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="gambar/asu.png">
+    <title>kontak kami</title>
+    <style>
+        html {
+        background: grey;/*untuk membuat background abu abu*/
+        color: #000;/*untuk membuat text berwarna hitam*/
+        font-family: sans-serif;/*unutk menentukan jenis font yg dipakai yaitu sans serif*/
+        -ms-text-size-adjust: 100%;/*unutk membuat text menyesuaikan ukuran jendela*/
+        -webkit-text-size-adjust: 100%;/*unutk membuat text menyesuaikan ukuran jendela*/
+        }
+        body {
+            background-image: url(gambar/ruangan_berlaptop.jpeg);/*untuk menambahkan gif sebagai backgroundnya*/
+            background-size: 100%;/*untuk membuat ukuran background menjadi 100%*/
+        } 
+        img{
+            width: 30px;/*untuk membuat img panjangnya menjadi 30px*/
+            height: 20px;/*untuk membuat img lebarnya 20px*/
+        }
+        h1{
+            margin-top: 60px;/*untuk membuat jarak diluar sisi atas 60px*/
+        }
+        form{
+            border: none;/*untuk membuat garis tepi menghilang/ terhapus */
+        }
+        input{
+            border-radius: 25px;/*untuk membuat garis tepi dg lengkungan sebesar 25 px*/
+            padding: 5pt;/*untuk membuat jarak di dalam semua sisi sebesar 5pt */
+            margin: 20px;/*untuk membuat jarak diluar semua sisi masing masing 10px*/
+        }
+        textarea{
+            border-radius: 25px;/*untuk membuat garis tepi dg lengkungan sebesar 25 px*/
+            padding : 5pt;/*untuk membuat jarak di dalam semua sisi sebesar 5pt*/
+            margin: 10px;/*untuk membuat jarak diluar semua sisi masing masing 10px*/
+        }
+        button{
+            font-size: 21px;/*untuk memnbuat ukuran text menjadi 21px*/
+            background: green;/*untuk membuat background hijau*/
+            color: white;/*untuk membuat text berwarna white*/
+            border: none;/*unutk membuat garis tepi menghilang*/
+            border-radius: 100px;/*untuk membuat garis tepi dg lengkungan sebesar 25 px*/
+            padding: 15px 30px;/*untuk membuat jarak di dalam sisi atas bawah 15px kanan kiri 30px*/
+            margin-top: 20px;/*untuk membuat jarak diluar sisi atas sebesar 20px*/
+            margin-bottom: 160px;/*untuk membuat jarak diluar sisi bawah sebesar 200px*/
+            width: 150px;/*untuk membuat ukuran panjang 150px */
+            box-shadow: 10px 10px 22px green;/*untuk membuat shadow di bawah dan kiri button berwarna hijau*/
+            transition: 0.5s all ease;/*untuk mengatur waktu transisi menjadi 0.5 detik lebih lama agar tidak terlalu cepat saat pointer masuk ke button agar */
+        }
+        button:hover{
+            background: white;/*untuk membuat background putih*/
+            color : green;/*untuk membuat text berwarna hijau*/
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <a href="main.html">
+           <img src="gambar/back.svg">Back
+        </a>
+        <center>
+            <h1>silahkan masukan nama dan email anda</h1>
+                <form>
+                    <input type="text" class="text" placeholder="your name" required><br>
+                    <input type="text" class="email" placeholder="your e-mail" required><br>
+                    <textarea name="message" id="msg" placeholder="jenis laptop yg ingin disewa"></textarea><br>
+                    <button type="button" name="submit" id="send" value="Send" onclick="sending()">Send</button>
+                </form>
+        </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
