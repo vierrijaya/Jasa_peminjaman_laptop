@@ -27,7 +27,7 @@ color: red;
     height: 210px;    
 }
 .header .gambar {
-    width: 1347px;
+   
     height: 498px;
 	position: absolute;
 	
@@ -35,7 +35,7 @@ color: red;
 menu {
 	text-decoration: none;
 	font-family: 'Arial black';
-	width: 1347px;
+	
 	height: 20px ; 
 	background: linear-gradient(#000046, #1cb5e0);
 	padding: 10px
